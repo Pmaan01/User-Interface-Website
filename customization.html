@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="customization">
+        <h1>Customize Your Pizza</h1>
+
+        <form class="options">
+            <label for="pizza-size">Select Size:</label>
+            <select id="pizza-size" name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <label for="crust-type">Select Crust Type:</label>
+            <select id="crust-type" name="crust">
+                <option value="thin">Thin Crust</option>
+                <option value="thick">Thick Crust</option>
+                <option value="stuffed">Stuffed Crust</option>
+            </select>
+
+            <div >
+                <legend>Select Toppings:</legend>
+                <label><input type="checkbox" name="topping" value="cheese"> Extra Cheese</label><br>
+                <label><input type="checkbox" name="topping" value="pepperoni"> Pepperoni</label><br>
+                <label><input type="checkbox" name="topping" value="mushrooms"> Mushrooms</label><br>
+                <label><input type="checkbox" name="topping" value="olives"> Olives</label><br>
+                <label><input type="checkbox" name="topping" value="green-peppers"> Green Peppers</label><br>
+                <label><input type="checkbox" name="topping" value="pineapple"> Pineapple</label><br>
+                <label><input type="checkbox" name="topping" value="jalapenos"> Jalapenos</label><br>
+            </div>
+            <div class="cart-button">
+                <button onclick="location.href='pay.html'" class="cart-btn">🛒 Cart</button>
+            </div>
+
+            <button type="submit" class="add-to-cart">Add to Cart</button>
+        </form>
+
+        <button onclick="location.href='order.html'" class="back-btn">Go Back to Order Page</button>
+    </section>
+
+    <footer>
+        <p>Contact us at 123-456-7890 | Follow us on Social Media!</p>
+    </footer>
+</body>
+</html>
